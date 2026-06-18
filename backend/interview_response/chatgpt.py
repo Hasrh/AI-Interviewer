@@ -9,12 +9,6 @@ def stage1_chatgpt(interviewee_response = ''):
     load_dotenv()
 
     OPENAI_KEY = os.getenv("OPENAI_KEY")
-
-    # with open('./.env','r') as f:
-    #     data= f.read()
-    #     data = data.split('=')
-    #     OPENAI_KEY=data[1].replace('\n', '')
-
     openai.api_key=OPENAI_KEY
 
     #TODO get the relevant keywords from the resume of the candidate 
